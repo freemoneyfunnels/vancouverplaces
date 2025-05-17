@@ -19,7 +19,12 @@
 </head>
 <body>
   <h1>Terms of Use</h1>
-  <p>Effective Date: May 13, 2025</p>
+  <p>Effective Date: <span id="date"></span></p>
+  <script>
+    const d = new Date();
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    document.getElementById("date").textContent = d.toLocaleDateString(undefined, options);
+  </script>
 
   <p>By using this website, you agree to comply with and be bound by the following terms and conditions of use. Please review the following carefully.</p>
 
@@ -42,4 +47,3 @@
   <p>If you have any questions about these terms, please contact us at: <strong>contact@vancouverplaces.com</strong></p>
 </body>
 </html>
-
